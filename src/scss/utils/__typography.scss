@@ -1,0 +1,69 @@
+.h1 {
+    font-weight: 900;
+    font-size: rem(72);
+    line-height: 90.9%;
+    color: $color-text;
+    @media screen  
+      and (min-device-width: 1200px)  
+      and (max-device-width: 1600px)  
+      and (-webkit-min-device-pixel-ratio: 2) 
+      and (min-resolution: 192dpi) {
+        transform: scale(1.2) translate(8.5%, -20%);
+    }
+    @include media-l {
+        font-size: 40px;
+    }
+}
+
+.h2 {
+    font-weight: 900;
+    font-size: rem(55);
+    line-height: 100%;
+    @media screen  
+      and (min-device-width: 1200px)  
+      and (max-device-width: 1600px)  
+      and (-webkit-min-device-pixel-ratio: 2) 
+      and (min-resolution: 192dpi) {
+        transform: scale(1.2) translate(8.5%, -20%);
+    }
+    @include media-l {
+        font-size: 36px;
+        @include media-s {
+            font-size: 26px;
+        }
+    }
+}
+
+.h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 90.79%;
+    @include media-s {
+        font-size: 22px;
+    }
+}
+
+.h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 90.9%;
+    @include media-s {
+        font-size: 18px;
+    }
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    @include media-s {
+        font-size: 12px;
+    }
+
+    &.big {
+        font-size: 18px;
+        @include media-s {
+            font-size: 16px;
+        }
+    }
+}

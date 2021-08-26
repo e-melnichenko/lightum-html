@@ -1,0 +1,33 @@
+{% extends '../modules/base.twig' %}
+{% block page %}
+
+{% set pages = [
+    {
+        title: 'Главная',
+        fileName: 'main'
+    },
+    {
+        title: 'Личный кабинет 1',
+        fileName: 'lk-1'
+    },
+    {
+        title: 'Личный кабинет 2',
+        fileName: 'lk-2'
+    },
+    {
+        title: 'Стань преподавателем',
+        fileName: 'teacher'
+    },
+    {
+        title: 'Курсы',
+        fileName: 'courses'
+    },
+] %}
+<div class="wrapper">
+    <ul>
+        {% for  page in pages %}
+        <li><a href="{{page.fileName}}.html">{{ page.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

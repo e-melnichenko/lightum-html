@@ -1,0 +1,30 @@
+.course-hero {
+    margin-bottom: 70px;
+    background: linear-gradient(106.47deg, #FFF0FD -2.03%, rgba(255, 255, 255, 0) 107.99%), #E6F6FF;
+
+    &__inner {
+        padding-top: 108px;
+        padding-bottom: 124px;
+    }
+
+    &__img-wrap {
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 33px;
+    }
+
+    &__title {
+        position: absolute;
+        left: 50px;
+        bottom: 40px;
+        padding: 7px 25px;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 1.2;
+        background: linear-gradient(106.47deg, #FFF0FD -2.03%, rgba(255, 255, 255, 0) 107.99%), #E6F6FF;
+        border-radius: 26px;
+    }
+}

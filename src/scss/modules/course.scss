@@ -1,0 +1,48 @@
+.course {
+    margin-bottom: 48px;
+
+    &__decor {
+        position: absolute;
+        top: 300px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+
+        .decor-figure {
+            z-index: -1;
+            .parallax {
+                min-width: 0;
+                min-height: 0;
+            }
+
+            &:nth-child(1) {
+                left: -45%;
+                .parallax {
+                    width: 800px;
+                    height: 800px;
+                }
+            }
+            &:nth-child(2) {
+                left: -12%;
+                top: 450px;
+                .parallax {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+            &:nth-child(3) {
+                right: 200px;
+                top: 800px;
+                .parallax {
+                    width: 600px;
+                    height: 600px;
+                }
+            }
+    
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -9,7 +9,8 @@
   "author": "mbdg",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-twig": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",

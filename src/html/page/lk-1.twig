@@ -1,0 +1,232 @@
+{% extends '../modules/base.twig' %}
+{% block page %}
+<div class="messages">
+    <div class="message" data-aos="zoom-in">
+        <div class="message__info">
+            <div class="icon">
+                <img src="images/lk/maessage-1.svg" alt="">
+            </div>
+            <div class="date">12:30</div>
+        </div>
+        <div class="message__text">Добавилась функция автоматической проверки заданий учеников.</div>
+        <div class="message__close" data-action="close-message">
+            <svg>
+                <use xlink:href="images/icons.svg#close-message"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="message" data-aos="zoom-in">
+        <div class="message__info">
+            <div class="icon">
+                <img src="images/lk/message-2.svg" alt="">
+            </div>
+            <div class="date">12:25</div>
+        </div>
+        <div class="message__text">Поздравляем! У вас новое достижение. «100 учеников».</div>
+        <div class="message__close" data-action="close-message">
+            <svg>
+                <use xlink:href="images/icons.svg#close-message"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div class="lk-page">
+    <div class="wrapper">
+        <div class="decor-figure">
+            <div class="parallax-scroll" data-rellax-speed="2">
+                <div class="parallax">
+                    <div class="parallax-move" data-depth="0.2">
+                        <img src="images/decor/decor-17.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="decor-figure">
+            <div class="parallax-scroll" data-rellax-speed="2">
+                <div class="parallax">
+                    <div class="parallax-move" data-depth="0.2">
+                        <img src="images/decor/decor-18.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lk-head">
+            <div class="lk-head-main">
+                <div class="lk-head-person">
+                    <div class="lk-head-person__photo">
+                        <img src="images/lk/person-2.png" alt="">
+                    </div>
+                    <div class="lk-head-person__rating">
+                        <div class="lk-head-person__status">
+                            <svg fill="#39B54A">
+                                <use xlink:href="images/icons.svg#shield"></use>
+                            </svg>
+                            <div class="info">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                        <div class="lk-head-person__status">
+                            <svg fill="#FF931E">
+                                <use xlink:href="images/icons.svg#circle"></use>
+                            </svg>
+                            <div class="info">
+                                TOP <br>
+                                <span>100</span>
+                            </div>
+                        </div>
+                        <div class="lk-head-person__status">
+                            <svg fill="#D4145A">
+                                <use xlink:href="images/icons.svg#hexagon"></use>
+                            </svg>
+                            <div class="info">
+                                <svg fill="#FFFFFF">
+                                    <use xlink:href="images/icons.svg#like"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lk-head-status">
+                    <div class="lk-head-status__position">
+                        <span>Учитель</span>
+                    </div>
+                    <div class="lk-head-status__name">Михаил Тютин</div>
+                    <a href="" class="button green">
+                        <span>К моим курсам</span>
+                    </a>
+                </div>
+            </div>
+            <div class="lk-head-main">
+                <div class="lk-head-uni">
+                    <div class="lk-head-uni__photo">
+                        <img src="images/lk/uni-logo-1.png" alt="">
+                    </div>
+                    <div class="lk-head-uni__info">
+                        <div class="lk-head-status__name">University</div>
+                        <div class="lk-head-status__position">
+                            <span>Директор</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lk-headline">Настройки:</div>
+
+        <div class="lk-panel" data-aos="fade-in">
+            <div class="lk-panel-tabs">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="lk-panel-tabs__toggler active" data-action="change-lk-list" data-tabs-name="profile-list">
+                                <span>Профиль</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="lk-panel-tabs__toggler" data-action="change-lk-list" data-tabs-name="payment-list">
+                                <span>Платежи</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lk-panel-pages">
+                <div class="lk-panel-pages__item active" id="profile-list">
+                    <div class="lk-form">
+                        <div class="content">
+                            <form action="" class="form">
+                                <div class="form-field">
+                                    <div class="form-field__label">
+                                        <label for="name">Имя:</label>
+                                    </div>
+                                    <div class="form-field__input">
+                                        <input type="text" id="name">
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <div class="form-field__label">
+                                        <label for="surname">Фамилия:</label>
+                                    </div>
+                                    <div class="form-field__input">
+                                        <input type="text" id="surname">
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <div class="form-field__upload">
+                                        <label for="file-1">Загрузить фото</label>
+                                        <input type="file" id="file-1">
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <div class="form-field__label">
+                                        <label for="company">Название организации:</label>
+                                    </div>
+                                    <div class="form-field__input">
+                                        <input type="text" id="company">
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <div class="form-field__label">
+                                        <label for="post">Ваша должность:</label>
+                                    </div>
+                                    <div class="form-field__input">
+                                        <input type="text" id="post">
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <div class="form-field__upload">
+                                        <label for="file-2">Загрузить логотип организации</label>
+                                        <input type="file" id="file-2">
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <div class="form-field__label">
+                                        <label for="tel">Телефон:</label>
+                                    </div>
+                                    <div class="form-field__input">
+                                        <input type="tel" id="tel">
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <div class="form-field__label">
+                                        <label for="email">E-mail:</label>
+                                    </div>
+                                    <div class="form-field__input">
+                                        <input type="email" id="email">
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <div class="form-field__label">
+                                        <label for="pasword">Сменить пароль:</label>
+                                    </div>
+                                    <div class="form-field__input">
+                                        <input type="text" id="pasword">
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="lk-form-profile">
+                                <div class="pictures">
+                                    <img src="images/lk/person-1.png" alt="" class="photo">
+                                    <img src="images/lk/uni-logo-2.png" alt="" class="logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk-form-underline"></div>
+                        <button class="button purple">
+                            <span>Сохранить</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="lk-panel-pages__item" id="payment-list">
+                    <p>some text</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+  

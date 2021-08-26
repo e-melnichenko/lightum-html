@@ -49,6 +49,16 @@ body {
     }
 }
 
+.site-content { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+}
+
 .decor-figure {
     position: absolute;
     z-index: 2;
@@ -92,26 +102,27 @@ body {
         content: '';
         position: absolute;
         display: block;
-        width: 100%;
+        width: 200%;
+        // width: 100%;
         height: 100%;
         top: 0;
-        left: 0;
+        right: 0;
         transition: .3s;
         z-index: 1;
     }
 
-    &::before {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 0;
-        height: 100%;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: .3s;
-        z-index: 2;
-    }
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     display: block;
+    //     width: 0;
+    //     height: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     opacity: 0;
+    //     transition: .3s;
+    //     z-index: 2;
+    // }
 
     span {
         position: relative;
@@ -147,10 +158,13 @@ body {
     }
 
     &:hover {
-        &::before {
-            opacity: 1;
-            width: 100%;
+        &::after {
+            transform: translateX(50%);
         }
+        // &::before {
+        //     opacity: 1;
+        //     width: 100%;
+        // }
     }
 
     &:active {
@@ -159,52 +173,57 @@ body {
 
     &.purple {
         &::after {
-            background: linear-gradient(90deg, #FD5D99 -11.58%, #1290EC 116.01%);
+            // background: linear-gradient(90deg, #FD5D99 0%, #1290EC 100%);
+            background: linear-gradient(90deg, #1290EC 0%, #FD5D99 50%, #1290EC 100%);
         }
 
-        &::before {
-            background: linear-gradient(270deg, #FD5D99 -11.58%, #1290EC 116.01%);
-        }
+        // &::before {
+        //     background: linear-gradient(270deg, #FD5D99 -11.58%, #1290EC 116.01%);
+        // }
     }
 
     &.yellow {
         &::after {
-            background: linear-gradient(273.12deg, #FEF67B 8.57%, rgba(255, 255, 255, 0) 136.04%), #FC0F7F;
+            background: linear-gradient(90deg, #FEF67B 0%, #FC0F7F 50%,  #FEF67B 100%);
+            // background: linear-gradient(273.12deg, #FEF67B 8.57%, rgba(255, 255, 255, 0) 136.04%), #FC0F7F;
         }
 
-        &::before {
-            background: linear-gradient(273.12deg, #FC0F7F 8.57%, rgba(255, 255, 255, 0) 136.04%), #FEF67B;
-        }
+        // &::before {
+        //     background: linear-gradient(273.12deg, #FC0F7F 8.57%, rgba(255, 255, 255, 0) 136.04%), #FEF67B;
+        // }
     }
 
     &.blue {
         &::after {
-            background: linear-gradient(270.46deg, #86F0EF 0.9%, rgba(255, 255, 255, 0) 116.43%), #8C08EF;
+            background: linear-gradient(90deg, #86F0EF 0%, #8C08EF 50%, #86F0EF 100%);
+            // background: linear-gradient(270.46deg, #86F0EF 0.9%, rgba(255, 255, 255, 0) 116.43%), #8C08EF;
         }
 
-        &::before {
-            background: linear-gradient(270.46deg, #8C08EF 0.9%, rgba(255, 255, 255, 0) 116.43%), #86F0EF;
-        }
+        // &::before {
+        //     background: linear-gradient(270.46deg, #8C08EF 0.9%, rgba(255, 255, 255, 0) 116.43%), #86F0EF;
+        // }
     }
 
     &.green {
         &::after {
-            background: linear-gradient(90.82deg, #BFFF8D -5.98%, rgba(255, 255, 255, 0) 107.5%), #5FD0FC;
+            background: linear-gradient(90deg, #5FD0FC 0%, #8fe8c5 50%, #5FD0FC 100%);
+            // background: linear-gradient(90.82deg, #BFFF8D -5.98%, rgba(255, 255, 255, 0) 107.5%), #5FD0FC;
         }
 
-        &::before {
-            background: linear-gradient(90.82deg, #5FD0FC -5.98%, rgba(255, 255, 255, 0) 107.5%), #BFFF8D;
-        }
+        // &::before {
+        //     background: linear-gradient(90.82deg, #5FD0FC -5.98%, rgba(255, 255, 255, 0) 107.5%), #BFFF8D;
+        // }
     }
 
     &.orange {
         &::after {
-            background: linear-gradient(273.12deg, rgba(255, 0, 0, 0.39) 8.57%, rgba(255, 255, 255, 0) 136.04%), #FFEF61;
+            background: linear-gradient(90deg, #ff933c 0%, #ffb048 50%, #ff933c 100%);
+            // background: linear-gradient(273.12deg, rgba(255, 0, 0, 0.39) 8.57%, rgba(255, 255, 255, 0) 136.04%), #FFEF61;
         }
 
-        &::before {
-            background: linear-gradient(273.12deg, #FFEF61, rgba(255, 255, 255, 0) 136.04%), rgba(255, 0, 0, 0.39) 8.57%;
-        }
+        // &::before {
+        //     background: linear-gradient(273.12deg, #FFEF61, rgba(255, 255, 255, 0) 136.04%), rgba(255, 0, 0, 0.39) 8.57%;
+        // }
     }
 
     &.white {
@@ -232,6 +251,10 @@ body {
         span {
             color: $color-text;
         }
+    }
+
+    &._rounded {
+        border-radius: 45px;
     }
 }
 
@@ -434,3 +457,8 @@ button {
 @import "modules/header";
 @import "pages/pages";
 @import "modules/footer";
+@import "modules/course-header";
+@import "modules/course-hero";
+@import "modules/course-teacher";
+@import "modules/chapter";
+@import "modules/course";

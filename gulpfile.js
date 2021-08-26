@@ -24,11 +24,12 @@ global.$ = {
 	fileinclude: require('gulp-file-include'),
 	uglifyes: require('gulp-uglify-es').default,
 	babel: require('gulp-babel'),
+	twig: require('gulp-twig'),
 
 	path: {
 		tasks: require('./gulp/config/tasks.js'),
 		src: {
-			html: 'src/html/page/*.html',
+			html: 'src/html/page/*.twig',
 			sass: 'src/scss/*.scss',
 			js: 'src/js/**/*.*',
 			fonts: 'src/fonts/**/*.*',
@@ -43,7 +44,7 @@ global.$ = {
 			img: 'build/images/',
 		},
 		watch: {
-			html: 'src/html/page/*.html',
+			html: 'src/html/**/*.twig',
 			sass: 'src/scss/**/*.*',
 			js: 'src/js/**/*.js',
 			img: 'src/img/images/**/*.*',

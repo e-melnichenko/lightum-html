@@ -1,0 +1,599 @@
+{% extends '../modules/base.twig' %}
+{% block page %}
+<div class="lk-page">
+    <div class="wrapper wrapper_big">
+        <div class="lk-page-row">
+
+            <div class="lk-page-workspace">
+                <div class="lk-head">
+                    <div class="lk-head-main">
+                        <div class="lk-head-person">
+                            <div class="lk-head-person__photo">
+                                <img src="images/lk/person-2.png" alt="">
+                            </div>
+                            <div class="lk-head-person__rating">
+                                <div class="lk-head-person__status">
+                                    <svg fill="#39B54A">
+                                        <use xlink:href="images/icons.svg#shield"></use>
+                                    </svg>
+                                    <div class="info">
+                                        <span>95%</span>
+                                    </div>
+                                </div>
+                                <div class="lk-head-person__status">
+                                    <svg fill="#FF931E">
+                                        <use xlink:href="images/icons.svg#circle"></use>
+                                    </svg>
+                                    <div class="info">
+                                        TOP <br>
+                                        <span>100</span>
+                                    </div>
+                                </div>
+                                <div class="lk-head-person__status">
+                                    <svg fill="#D4145A">
+                                        <use xlink:href="images/icons.svg#hexagon"></use>
+                                    </svg>
+                                    <div class="info">
+                                        <svg fill="#FFFFFF">
+                                            <use xlink:href="images/icons.svg#like"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk-head-status">
+                            <div class="lk-head-status__position">
+                                <span>Учитель</span>
+                            </div>
+                            <div class="lk-head-status__name">Михаил Тютин</div>
+                            <a href="" class="button green">
+                                <span>К моим курсам</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lk-head-main">
+                        <div class="lk-head-uni">
+                            <div class="lk-head-uni__photo">
+                                <img src="images/lk/uni-logo-1.png" alt="">
+                            </div>
+                            <div class="lk-head-uni__info">
+                                <div class="lk-head-status__name">University</div>
+                                <div class="lk-head-status__position">
+                                    <span>Директор</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lk-panel" data-aos="fade-in">
+                    <div class="lk-panel-tabs">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="lk-panel-tabs__toggler" data-action="change-lk-list" data-tabs-name="potok-list">
+                                        <span>Поток</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="lk-panel-tabs__toggler mint active" data-action="change-lk-list" data-tabs-name="course-list">
+                                        <span>Мои курсы</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="lk-panel-tabs__toggler" data-action="change-lk-list" data-tabs-name="now-list">
+                                        <span>Текущие</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="lk-panel-tabs__toggler" data-action="change-lk-list" data-tabs-name="favorite-list">
+                                        <span>Избранные</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="lk-panel-tabs__toggler" data-action="change-lk-list" data-tabs-name="done-list">
+                                        <span>Завершенные</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lk-panel-pages">
+
+                        <div class="lk-panel-pages__item" id="potok-list">
+                            <div class="lk-panel-potok">
+                                <div class="lk-panel-potok__row">
+                                    <div class="lk-panel-potok__col">
+                                        <div class="lk-panel-potok-item">
+                                            <div class="lk-panel-potok-item__info">
+                                                <div class="picture">
+                                                    <img src="images/courses/photo-5.png" alt="">
+                                                </div>
+                                                <div class="date">12.04.2020  10:00</div>
+                                            </div>
+                                            <div class="lk-panel-potok-item__title">Вышел новый урок для учителей Лайтум.</div>
+                                            <div class="lk-panel-potok-item__text">Узнайте, как правильно работать с освещением, чтобы повысить качество видео.</div>
+                                            <div class="lk-panel-potok-item__link">
+                                                <a href="">Перейти к уроку</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lk-panel-potok__col">
+                                        <div class="lk-panel-potok-item" style="background: linear-gradient(159.98deg, #FFF9DA -8.81%, rgba(255, 255, 255, 0) 109.49%), #FFFFFF;">
+                                            <div class="lk-panel-potok-item__info">
+                                                <div class="picture">
+                                                    <img src="images/courses/photo-7.png" alt="">
+                                                </div>
+                                                <div class="date">12.04.2020  10:00</div>
+                                            </div>
+                                            <div class="lk-panel-potok-item__title">Новые ученики:</div>
+                                            <div class="lk-panel-potok-item__text">У вас 10 новых учеников на курсе: Закатка огурцов. Исторический эксперимент.</div>
+                                        </div>
+                                    </div>
+                                    <div class="lk-panel-potok__col">
+                                        <div class="lk-panel-potok-item">
+                                            <div class="lk-panel-potok-item__info">
+                                                <div class="picture">
+                                                    <img src="images/courses/photo-5.png" alt="">
+                                                </div>
+                                                <div class="date">12.04.2020  10:00</div>
+                                            </div>
+                                            <div class="lk-panel-potok-item__title">Вышел новый курс для видео монтажа для учителей Лайтум.</div>
+                                            <div class="lk-panel-potok-item__text">Про основы видеомонтажа видеокурсов</div>
+                                            <div class="lk-panel-potok-item__link">
+                                                <a href="">Перейти к уроку</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lk-panel-potok__col">
+                                        <div class="lk-panel-potok-item" style="background: linear-gradient(180deg, #FFE9FD 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF">
+                                            <div class="lk-panel-potok-item__info">
+                                                <div class="picture">
+                                                    <img src="images/courses/photo-8.png" alt="">
+                                                </div>
+                                                <div class="date">12.04.2020  10:00</div>
+                                            </div>
+                                            <div class="lk-panel-potok-item__title">Проверьте домашнее задание</div>
+                                            <div class="lk-panel-potok-item__text">Новое выполненное задание курса:<br>Стойкость бытия и вяленые овощи.</div>
+                                            <div class="lk-panel-potok-item__link">
+                                                <a href="">Перейти к заданию</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk-panel-pages__item active" id="course-list" style="background: linear-gradient(0.78deg, #FFFFFF 12.96%, rgba(255, 255, 255, 0) 94.78%), #C4FFDB;">
+                            <div class="lk-panel-courses">
+                                <div class="lk-panel-courses-item">
+                                    <div class="lk-panel-courses-item__row">
+                                        <div class="lk-panel-courses-item__info">
+                                            <div class="title">Массаж пяточек со скрабом. Введение в изометрический сюрреализм</div>
+                                            <div class="lk-panel-courses-status">
+                                                <div class="lk-panel-courses-status__item">
+                                                    <div class="info"><span>Учатся: <b>123</b></span></div>
+                                                </div>
+                                                <div class="lk-panel-courses-status__item">
+                                                    <div class="info"><span>В закладках: <b>300</b></span></div>
+                                                </div>
+                                                <div class="lk-panel-courses-status__item">
+                                                    <div class="info"><span>Закончили: <b>50</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="lk-panel-courses-edit">
+                                                <div class="lk-panel-courses-edit__item">
+                                                    <a href="" class="button green">
+                                                        <span>Статистика</span>
+                                                    </a>
+                                                </div>
+                                                <div class="lk-panel-courses-edit__item">
+                                                    <a href="" class="button green">
+                                                        <span>Сообщения</span>
+                                                    </a>
+                                                </div>
+                                                <div class="lk-panel-courses-edit__item">
+                                                    <a href="" class="button green">
+                                                        <span>Проверка заданий</span>
+                                                    </a>
+                                                </div>
+                                                <div class="lk-panel-courses-edit__item">
+                                                    <a href="" class="button green">
+                                                        <span>Редактировать курс</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-panel-courses-item__picture">
+                                            <img src="images/lk/pic-1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-panel-courses-item">
+                                    <div class="lk-panel-courses-item__row">
+                                        <div class="lk-panel-courses-item__info">
+                                            <div class="title">Массаж пяточек со скрабом. Введение в изометрический сюрреализм</div>
+                                            <div class="lk-panel-courses-status">
+                                                <div class="lk-panel-courses-status__item">
+                                                    <div class="info"><span>Учатся: <b>123</b></span></div>
+                                                </div>
+                                                <div class="lk-panel-courses-status__item">
+                                                    <div class="info"><span>В закладках: <b>300</b></span></div>
+                                                </div>
+                                                <div class="lk-panel-courses-status__item">
+                                                    <div class="info"><span>Закончили: <b>50</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="lk-panel-courses-edit">
+                                                <div class="lk-panel-courses-edit__item">
+                                                    <a href="" class="button green">
+                                                        <span>Статистика</span>
+                                                    </a>
+                                                </div>
+                                                <div class="lk-panel-courses-edit__item">
+                                                    <a href="" class="button green">
+                                                        <span>Сообщения</span>
+                                                    </a>
+                                                </div>
+                                                <div class="lk-panel-courses-edit__item">
+                                                    <a href="" class="button green">
+                                                        <span>Проверка заданий</span>
+                                                    </a>
+                                                </div>
+                                                <div class="lk-panel-courses-edit__item">
+                                                    <a href="" class="button green">
+                                                        <span>Редактировать курс</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-panel-courses-item__picture">
+                                            <img src="images/lk/pic-2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="lk-panel-courses-item lk-panel-courses-item_new">
+                                    <div class="lk-panel-courses-item__row">
+                                        <div class="lk-panel-courses-item__info">
+                                            <div class="title">Создайте новый курс, чтобы делиться знаниями</div>
+                                        </div>
+                                        <div class="lk-panel-courses-item__picture">
+                                            <img src="images/lk/pic-3.png" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lk-panel-pages__item" id="now-list">
+                            <div class="lk-panel-now">
+                                <div class="lk-panel-now__row">
+                                    <div class="lk-panel-now__col">
+                                        <div class="starter-item starter-item_hexagon">
+                                            <div class="info">
+                                                <div class="descr">
+                                                    <div class="h3">Само<br>развитие</div>
+                                                    <p>Разработчик мобильных приложений проджект менеджер</p>
+                                                </div>
+                                                <div class="picture">
+                                                    <img src="images/starter/photo-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="status">Бесплатно</p>
+                                            <div class="about">
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#cloack"></use>
+                                                    </svg>
+                                                    <span>12 ч. 10 м.</span>
+                                                </p>
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#person"></use>
+                                                    </svg>
+                                                    <span>Уровень: Новичек</span>
+                                                </p>
+                                            </div>
+                                            <div class="skils">
+                                                <p>Ты получишь навыки:</p>
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="purple">Читать</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p class="purple">Писать</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="link">
+                                                <a href="">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lk-panel-now__col">
+                                        <div class="starter-item">
+                                            <div class="info">
+                                                <div class="descr">
+                                                    <div class="h3">Кодинг</div>
+                                                    <p>Разработчик мобильных приложений проджект менеджер</p>
+                                                </div>
+                                                <div class="picture">
+                                                    <img src="images/starter/photo-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="status">Бесплатно</p>
+                                            <div class="about">
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#cloack"></use>
+                                                    </svg>
+                                                    <span>12 ч. 10 м.</span>
+                                                </p>
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#person"></use>
+                                                    </svg>
+                                                    <span>Уровень: Новичек</span>
+                                                </p>
+                                            </div>
+                                            <div class="skils">
+                                                <p>Ты получишь навыки:</p>
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="brown">Читать</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p class="brown">Писать</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p class="brown">Самовыражаться</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="link">
+                                                <a href="">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lk-panel-now__col">
+                                        <div class="starter-item starter-item_hexagon">
+                                            <div class="info">
+                                                <div class="descr">
+                                                    <div class="h3">Массаж</div>
+                                                    <p>Разработчик мобильных приложений проджект менеджер</p>
+                                                </div>
+                                                <div class="picture">
+                                                    <img src="images/starter/photo-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="status">Бесплатно</p>
+                                            <div class="about">
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#cloack"></use>
+                                                    </svg>
+                                                    <span>12 ч. 10 м.</span>
+                                                </p>
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#person"></use>
+                                                    </svg>
+                                                    <span>Уровень: Новичек</span>
+                                                </p>
+                                            </div>
+                                            <div class="skils">
+                                                <p>Ты получишь навыки:</p>
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="pink">Читать</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p class="pink">Писать</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p class="pink">Самовыражаться</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="link">
+                                                <a href="">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lk-panel-now__col">
+                                        <div class="starter-item starter-item_hexagon">
+                                            <div class="info">
+                                                <div class="descr">
+                                                    <div class="h3">Само<br>развитие</div>
+                                                    <p>Разработчик мобильных приложений проджект менеджер</p>
+                                                </div>
+                                                <div class="picture">
+                                                    <img src="images/starter/photo-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="status">Бесплатно</p>
+                                            <div class="about">
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#cloack"></use>
+                                                    </svg>
+                                                    <span>12 ч. 10 м.</span>
+                                                </p>
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#person"></use>
+                                                    </svg>
+                                                    <span>Уровень: Новичек</span>
+                                                </p>
+                                            </div>
+                                            <div class="skils">
+                                                <p>Ты получишь навыки:</p>
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="purple">Читать</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p class="purple">Писать</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="link">
+                                                <a href="">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lk-panel-now__col">
+                                        <div class="starter-item">
+                                            <div class="info">
+                                                <div class="descr">
+                                                    <div class="h3">Кодинг</div>
+                                                    <p>Разработчик мобильных приложений проджект менеджер</p>
+                                                </div>
+                                                <div class="picture">
+                                                    <img src="images/starter/photo-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="status">Бесплатно</p>
+                                            <div class="about">
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#cloack"></use>
+                                                    </svg>
+                                                    <span>12 ч. 10 м.</span>
+                                                </p>
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#person"></use>
+                                                    </svg>
+                                                    <span>Уровень: Новичек</span>
+                                                </p>
+                                            </div>
+                                            <div class="skils">
+                                                <p>Ты получишь навыки:</p>
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="brown">Читать</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p class="brown">Писать</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p class="brown">Самовыражаться</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="link">
+                                                <a href="">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lk-panel-now__col">
+                                        <div class="starter-item starter-item_hexagon">
+                                            <div class="info">
+                                                <div class="descr">
+                                                    <div class="h3">Массаж</div>
+                                                    <p>Разработчик мобильных приложений проджект менеджер</p>
+                                                </div>
+                                                <div class="picture">
+                                                    <img src="images/starter/photo-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="status">Бесплатно</p>
+                                            <div class="about">
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#cloack"></use>
+                                                    </svg>
+                                                    <span>12 ч. 10 м.</span>
+                                                </p>
+                                                <p>
+                                                    <svg>
+                                                        <use xlink:href="images/icons.svg#person"></use>
+                                                    </svg>
+                                                    <span>Уровень: Новичек</span>
+                                                </p>
+                                            </div>
+                                            <div class="skils">
+                                                <p>Ты получишь навыки:</p>
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="pink">Читать</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p class="pink">Писать</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p class="pink">Самовыражаться</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="link">
+                                                <a href="">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk-panel-pages__item" id="favorite-list">Избранные</div>
+                        <div class="lk-panel-pages__item" id="done-list">Завершенные</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="lk-page-subbar">
+                <a href="" class="button orange cup" data-aos="zoom-in">
+                    <svg>
+                        <use xlink:href="images/icons.svg#cup"></use>
+                    </svg>
+                    <span>Достижения</span>
+                </a>
+                <div class="lk-page-subbar__headline">
+                    Полезные курсы для учителей:
+                </div>
+                <div class="lk-page-subbar__list">
+                    <div class="course-item course-item_hexagon" data-aos="zoom-in">
+                        <div class="course-item__info">
+                            <div class="descr">
+                                <div class="h3">Медитация</div>
+                                <p>Разработчик мобильных приложений проджект менеджер</p>
+                            </div>
+                            <img src="images/courses/photo-2.png" alt="">
+                        </div>
+                        <div class="course-item__link">
+                            <a href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="course-item" data-aos="zoom-in">
+                        <div class="course-item__info">
+                            <div class="descr">
+                                <div class="h3">Видеомонтаж</div>
+                                <p>Разработчик мобильных приложений проджект менеджер</p>
+                            </div>
+                            <img src="images/courses/photo-5.png" alt="">
+                        </div>
+                        <div class="course-item__link">
+                            <a href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="course-item course-item_hexagon" data-aos="zoom-in">
+                        <div class="course-item__info">
+                            <div class="descr">
+                                <div class="h3">Риторика</div>
+                                <p>Разработчик мобильных приложений проджект менеджер</p>
+                            </div>
+                            <img src="images/courses/photo-6.png" alt="">
+                        </div>
+                        <div class="course-item__link">
+                            <a href="">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="button purple more" data-aos="zoom-in">
+                    <span>Посмотреть все</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

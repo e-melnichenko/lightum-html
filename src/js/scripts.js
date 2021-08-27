@@ -80,6 +80,13 @@ $(document).ready(function () {
         //     },
         // }
     });
+
+    const lessonSlider = new Swiper('.js-lesson-slider', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+    })
     
     $('body').on('click', '[data-toggle="categories-list"]', function() {
         $(this).next('.categories-list').slideToggle();
@@ -154,4 +161,8 @@ $(document).ready(function () {
         };
     };
     dragElement(document.getElementById("comparison-change"));
+
+    function initVideo() {
+        
+    }
 });

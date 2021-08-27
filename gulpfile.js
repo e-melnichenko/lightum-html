@@ -34,7 +34,8 @@ global.$ = {
 			js: 'src/js/**/*.*',
 			fonts: 'src/fonts/**/*.*',
 			img: 'src/images/static/**/*.*',
-			svg: 'src/images/sprite/*.svg'
+			svg: 'src/images/sprite/*.svg',
+			video: 'src/video/**/*.*'
 		},
 		build: {
 			html: 'build/',
@@ -42,6 +43,7 @@ global.$ = {
 			js: 'build/js/',
 			fonts: 'build/fonts/',
 			img: 'build/images/',
+			video: 'build/video/'
 		},
 		watch: {
 			html: 'src/html/**/*.twig',
@@ -49,7 +51,8 @@ global.$ = {
 			js: 'src/js/**/*.js',
 			img: 'src/img/images/**/*.*',
 			svg: 'src/img/sprite/*.svg',
-			fonts: 'src/fonts/**/*.*'
+			fonts: 'src/fonts/**/*.*',
+			video: 'src/video/**/*.*'
 		},
 	}
 }
@@ -62,7 +65,7 @@ $.path.tasks.forEach((taskPath) => require(taskPath)());
 $.path.tasks.forEach((taskPath) => require(taskPath)());
 
 $.gulp.task('common', $.gulp.series('clean', $.gulp.parallel('html', 'fonts', 'svg')));
-$.gulp.task('dev', $.gulp.series('sass', 'js', 'img'));
+$.gulp.task('dev', $.gulp.parallel('sass', 'js', 'img', 'video'));
 
 
 $.gulp.task('default', $.gulp.series('common', $.gulp.parallel('dev'), $.gulp.parallel('watch', 'localhost')));

@@ -1,0 +1,34 @@
+{% extends '../modules/course-base.twig' %}
+{% block page %}
+    <section class="lesson-hero">
+        <div class="wrapper">
+            <h1 class="lesson-hero__title">Способы вязания. Научись вязать</h1>
+            <div class="lesson-hero__slider">
+                <div class="js-lesson-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="lesson-hero__video-wrap js-video-container">
+                                <video class="lesson-hero__video js-video" src="video/knitting.mp4"></video>
+                                <button class="lesson-hero__play-btn js-play" type="button">
+                                    <svg class="lesson-hero__play-icon"><use xlink:href="images/icons.svg#play"></use></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="lesson-hero__video-wrap js-video-container">
+                                <video class="lesson-hero__video js-video" src="video/knitting.mp4"></video>
+                                <button class="lesson-hero__play-btn js-play" type="button">
+                                    <svg class="lesson-hero__play-icon"><use xlink:href="images/icons.svg#play"></use></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="lesson-hero__slider-control _prev swiper-button-prev" type="button"></button>
+                <button class="lesson-hero__slider-control _next swiper-button-next" type="button"></button>
+            </div>
+            <h2 class="lesson-hero__chapter">Глава 2. Вязание спицами по мокрому полу</h2>
+            <p class="lesson-hero__lesson">Урок 3. Скользящие перехваты</p>
+        </div>
+    </section>
+{% endblock %}

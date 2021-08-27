@@ -6,5 +6,6 @@ module.exports = function() {
 		$.gulp.watch($.path.watch.img, $.gulp.series('img'));
 		$.gulp.watch($.path.watch.svg, $.gulp.series('svg'));
 		$.gulp.watch($.path.watch.html, $.gulp.series('html'));
+		$.gulp.watch($.path.watch.video, $.gulp.series('video'));
 	})
 };

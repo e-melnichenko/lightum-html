@@ -80,3 +80,11 @@
 		}
 	}
 }
+
+@mixin btn-reset() {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+	cursor: pointer;
+}

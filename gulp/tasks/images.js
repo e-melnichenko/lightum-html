@@ -24,5 +24,4 @@ module.exports = function() {
 		.pipe($.gulp.dest($.path.build.img))
 		.pipe($.browsersync.stream());
 	});
-
 };

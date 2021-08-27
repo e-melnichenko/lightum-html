@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    initVideo();
 
     AOS.init({
         disable: false,
@@ -86,8 +87,16 @@ $(document).ready(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           },
+        on: {
+            slideChange() {
+                $(this.$el).find('.js-video-container').each(function() {
+                    $(this).find('.js-video').get(0).pause();
+                    $(this).removeClass('_playing');
+                })
+            }
+        }
     })
-    
+
     $('body').on('click', '[data-toggle="categories-list"]', function() {
         $(this).next('.categories-list').slideToggle();
     });
@@ -163,6 +172,22 @@ $(document).ready(function () {
     dragElement(document.getElementById("comparison-change"));
 
     function initVideo() {
-        
+        $('.js-play').on('click', function() {
+            const $container = $(this).closest('.js-video-container');
+            $container.find('.js-video').get(0).play();
+            $container.addClass('_playing')
+        })
+
+        $('.js-video').on('ended', function() {
+            $(this).closest('.js-video-container').removeClass('_playing')
+        })
+
+        $('.js-video').on('click', function() {
+            const $container = $(this).closest('.js-video-container');
+            if(!$container.hasClass('_playing')) return
+
+            this.pause();
+            $container.removeClass('_playing');
+        })
     }
 });

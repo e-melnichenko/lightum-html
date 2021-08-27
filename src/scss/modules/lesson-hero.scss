@@ -16,6 +16,11 @@
 
     &__video-wrap {
         position: relative;
+        &._playing {
+            .lesson-hero__play-btn {
+                display: none;
+            }
+        }
     }
 
     &__video {

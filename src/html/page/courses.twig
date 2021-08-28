@@ -12,82 +12,47 @@
 </section>
 <section class="course">
     <div class="wrapper">
-
-    {# decore #}
-        <div class="course__decor">
-            <div class="decor-figure">
-                <div class="parallax-scroll" data-rellax-speed="2">
-                    <div class="parallax">
-                        <div class="parallax-move" data-depth="0.35">
-                            <img src="images/decor/decor-3.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="decor-figure">
-                <div class="parallax-scroll" data-rellax-speed="3">
-                    <div class="parallax">
-                        <div class="parallax-move" data-depth="0.3">
-                            <img src="images/decor/decor-3.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="decor-figure">
-                <div class="parallax-scroll" data-rellax-speed="1.2">
-                    <div class="parallax">
-                        <div class="parallax-move" data-depth="0.35">
-                            <img src="images/decor/decor-3.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    {# decore #}
-
-        <div class="course__content">
-            <header class="course-teacher">
-                <div class="course-teacher__avatar lk-head-person">
-                    <div class="lk-head-person__photo">
-                        <img src="images/course-page/teacher.png" alt="">
-                    </div>
-                    <div class="lk-head-person__rating">
-                        <div class="lk-head-person__status">
-                            <svg fill="#39B54A">
-                                <use xlink:href="images/icons.svg#shield"></use>
-                            </svg>
-                            <div class="info">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                        <div class="lk-head-person__status">
-                            <svg fill="#FF931E">
-                                <use xlink:href="images/icons.svg#circle"></use>
-                            </svg>
-                            <div class="info">
-                                TOP <br>
-                                <span>100</span>
-                            </div>
-                        </div>
-                        <div class="lk-head-person__status">
-                            <svg fill="#D4145A">
-                                <use xlink:href="images/icons.svg#hexagon"></use>
-                            </svg>
-                            <div class="info">
-                                <svg fill="#FFFFFF">
-                                    <use xlink:href="images/icons.svg#like"></use>
-                                </svg>
+        <div class="course__inner">
+    
+        {# decore #}
+            <div class="course__decor">
+                <div class="decor-figure">
+                    <div class="parallax-scroll" data-rellax-speed="2">
+                        <div class="parallax">
+                            <div class="parallax-move" data-depth="0.35">
+                                <img src="images/decor/decor-3.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="course-teacher__content">
-                    <p class="course-teacher__text">
-                        Добро пожаловать на курс “Научись вязать”<br>
-                        Меня зовут Илона Масковна, я имею докторскую степень по вязанию крючком навзничь. Вас ждут интересные уроки и новые знания.
-                    </p>
-                    <ul class="course-teacher__achieve-list">
-                        <li class="course-teacher__achieve-item">
+                <div class="decor-figure">
+                    <div class="parallax-scroll" data-rellax-speed="3">
+                        <div class="parallax">
+                            <div class="parallax-move" data-depth="0.3">
+                                <img src="images/decor/decor-3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="decor-figure">
+                    <div class="parallax-scroll" data-rellax-speed="1.2">
+                        <div class="parallax">
+                            <div class="parallax-move" data-depth="0.35">
+                                <img src="images/decor/decor-3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {# decore #}
+    
+            <div class="course__content">
+                <header class="course-teacher">
+                    <div class="course-teacher__avatar lk-head-person">
+                        <div class="lk-head-person__photo">
+                            <img src="images/course-page/teacher.png" alt="">
+                        </div>
+                        <div class="lk-head-person__rating">
                             <div class="lk-head-person__status">
                                 <svg fill="#39B54A">
                                     <use xlink:href="images/icons.svg#shield"></use>
@@ -96,9 +61,6 @@
                                     <span>95%</span>
                                 </div>
                             </div>
-                            <p class="course-teacher__achieve-text">95% учеников отзываются хорошо</p>
-                        </li>
-                        <li class="course-teacher__achieve-item">
                             <div class="lk-head-person__status">
                                 <svg fill="#FF931E">
                                     <use xlink:href="images/icons.svg#circle"></use>
@@ -108,9 +70,6 @@
                                     <span>100</span>
                                 </div>
                             </div>
-                            <p class="course-teacher__achieve-text">Лучшие учителя России</p>
-                        </li>
-                        <li class="course-teacher__achieve-item">
                             <div class="lk-head-person__status">
                                 <svg fill="#D4145A">
                                     <use xlink:href="images/icons.svg#hexagon"></use>
@@ -121,123 +80,166 @@
                                     </svg>
                                 </div>
                             </div>
-                            <p class="course-teacher__achieve-text">Доступный материал, быстрая проверка</p>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-
-            {% set chapterList = [
-                {
-                    title: 'История вязания и инструментов',
-                    text: 'Используемые узоры: соты из 20п: <br> 1р:*1п снять на вспомогательную спицу за работой, 1лп, снятую петлю провязать лицевой. 1п снять на вспомогательную спицу перед работой, 1лп, снятую петлю провязать лицевой*. Повторять до конца рисунка',
-                    disabled: false,
-                    lessonsList: [
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: false,
-                        },
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                    ]
-                },
-                {
-                    title: 'Вязание ничком',
-                    text: 'Используемые узоры: соты из 20п: <br> 1р:*1п снять на вспомогательную спицу за работой, 1лп, снятую петлю провязать лицевой. 1п снять на вспомогательную спицу перед работой, 1лп, снятую петлю провязать лицевой*. Повторять до конца рисунка',
-                    bottomText: 'Выполните задание первой главы чтобы получить доступ ко второй',
-                    disabled: true,
-                    lessonsList: [
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                    ]
-                },
-                {
-                    title: 'Вязание с упорами',
-                    text: 'Используемые узоры: соты из 20п: <br> 1р:*1п снять на вспомогательную спицу за работой, 1лп, снятую петлю провязать лицевой. 1п снять на вспомогательную спицу перед работой, 1лп, снятую петлю провязать лицевой*. Повторять до конца рисунка',
-                    disabled: true,
-                    bottomText: 'Выполните задание первой главы чтобы получить доступ ко второй',
-                    lessonsList: [
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                        {
-                            name: 'История вязания и инструментов',
-                            disabled: true,
-                        },
-                    ]
-                },
-            ] %}
-
-            <ul>
-            {% for chapter in chapterList %}
-                <li class="chapter__item {% if (chapter.disabled) %}_disabled{% endif %}">
-                    <div class="chapter__top">
-                        <h2 class="chapter__title">
-                            <span>Глава {{ loop.index }}.</span> 
-                            <span>{{ chapter.title }}</span>
-                        </h2>
-                        <p class="chapter__text">{{ chapter.text }}</p>
+                        </div>
                     </div>
-                    <ul class="chapter__lessons-list">
-                    {% for lesson in chapter.lessonsList %}
-                        <li class="chapter__lesson {% if (lesson.disabled) %}_disabled{% endif %}">
-                            <a href="#" class="chapter__lesson-link">
-                                <h3 class="chapter__lesson-title">
-                                    <span class="chapter__lesson-number">Урок {{ loop.index }}.</span>
-                                    <span>{{ lesson.name }}</span>
-                                </h3>
-                            </a>
-                        </li>
-                    {% endfor %}
-                    </ul>
-                    <div class="chapter__bottom">
-                        <a href="#" class="chapter__start-btn button purple _rounded"><span>Начать</span></a>
-                        <p class="chapter__bottom-text">{{ chapter.bottomText }}</p>
+                    <div class="course-teacher__content">
+                        <p class="course-teacher__text">
+                            Добро пожаловать на курс “Научись вязать”<br>
+                            Меня зовут Илона Масковна, я имею докторскую степень по вязанию крючком навзничь. Вас ждут интересные уроки и новые знания.
+                        </p>
+                        <ul class="course-teacher__achieve-list">
+                            <li class="course-teacher__achieve-item">
+                                <div class="lk-head-person__status">
+                                    <svg fill="#39B54A">
+                                        <use xlink:href="images/icons.svg#shield"></use>
+                                    </svg>
+                                    <div class="info">
+                                        <span>95%</span>
+                                    </div>
+                                </div>
+                                <p class="course-teacher__achieve-text">95% учеников отзываются хорошо</p>
+                            </li>
+                            <li class="course-teacher__achieve-item">
+                                <div class="lk-head-person__status">
+                                    <svg fill="#FF931E">
+                                        <use xlink:href="images/icons.svg#circle"></use>
+                                    </svg>
+                                    <div class="info">
+                                        TOP <br>
+                                        <span>100</span>
+                                    </div>
+                                </div>
+                                <p class="course-teacher__achieve-text">Лучшие учителя России</p>
+                            </li>
+                            <li class="course-teacher__achieve-item">
+                                <div class="lk-head-person__status">
+                                    <svg fill="#D4145A">
+                                        <use xlink:href="images/icons.svg#hexagon"></use>
+                                    </svg>
+                                    <div class="info">
+                                        <svg fill="#FFFFFF">
+                                            <use xlink:href="images/icons.svg#like"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="course-teacher__achieve-text">Доступный материал, быстрая проверка</p>
+                            </li>
+                        </ul>
                     </div>
-                </li>
-            {% endfor %}
-            </ul>
+                </header>
+    
+                {% set chapterList = [
+                    {
+                        title: 'История вязания и инструментов',
+                        text: 'Используемые узоры: соты из 20п: <br> 1р:*1п снять на вспомогательную спицу за работой, 1лп, снятую петлю провязать лицевой. 1п снять на вспомогательную спицу перед работой, 1лп, снятую петлю провязать лицевой*. Повторять до конца рисунка',
+                        disabled: false,
+                        lessonsList: [
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: false,
+                            },
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                        ]
+                    },
+                    {
+                        title: 'Вязание ничком',
+                        text: 'Используемые узоры: соты из 20п: <br> 1р:*1п снять на вспомогательную спицу за работой, 1лп, снятую петлю провязать лицевой. 1п снять на вспомогательную спицу перед работой, 1лп, снятую петлю провязать лицевой*. Повторять до конца рисунка',
+                        bottomText: 'Выполните задание первой главы чтобы получить доступ ко второй',
+                        disabled: true,
+                        lessonsList: [
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                        ]
+                    },
+                    {
+                        title: 'Вязание с упорами',
+                        text: 'Используемые узоры: соты из 20п: <br> 1р:*1п снять на вспомогательную спицу за работой, 1лп, снятую петлю провязать лицевой. 1п снять на вспомогательную спицу перед работой, 1лп, снятую петлю провязать лицевой*. Повторять до конца рисунка',
+                        disabled: true,
+                        bottomText: 'Выполните задание первой главы чтобы получить доступ ко второй',
+                        lessonsList: [
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                            {
+                                name: 'История вязания и инструментов',
+                                disabled: true,
+                            },
+                        ]
+                    },
+                ] %}
+    
+                <ul>
+                {% for chapter in chapterList %}
+                    <li class="chapter__item {% if (chapter.disabled) %}_disabled{% endif %}">
+                        <div class="chapter__top">
+                            <h2 class="chapter__title">
+                                <span>Глава {{ loop.index }}.</span>
+                                <span>{{ chapter.title }}</span>
+                            </h2>
+                            <p class="chapter__text">{{ chapter.text }}</p>
+                        </div>
+                        <ul class="chapter__lessons-list">
+                        {% for lesson in chapter.lessonsList %}
+                            <li class="chapter__lesson {% if (lesson.disabled) %}_disabled{% endif %}">
+                                <a href="#" class="chapter__lesson-link">
+                                    <h3 class="chapter__lesson-title">
+                                        <span class="chapter__lesson-number">Урок {{ loop.index }}.</span>
+                                        <span>{{ lesson.name }}</span>
+                                    </h3>
+                                </a>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                        <div class="chapter__bottom">
+                            <a href="#" class="chapter__start-btn button purple _rounded"><span>Начать</span></a>
+                            <p class="chapter__bottom-text">{{ chapter.bottomText }}</p>
+                        </div>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
 </section>

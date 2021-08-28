@@ -226,6 +226,13 @@ body {
         // }
     }
 
+    &.pink-blue {
+        &::after {
+            background: linear-gradient(90deg, #62bdff 0%, #e3aaff 50%, #62bdff 100%);
+            // background: linear-gradient(273.12deg, rgba(255, 0, 0, 0.39) 8.57%, rgba(255, 255, 255, 0) 136.04%), #FFEF61;
+        }
+    }
+
     &.white {
         background: #ffffff;
 
@@ -463,3 +470,4 @@ button {
 @import "modules/chapter";
 @import "modules/course";
 @import "modules/lesson-hero";
+@import "modules/course-nav";

@@ -25,6 +25,7 @@ global.$ = {
 	uglifyes: require('gulp-uglify-es').default,
 	babel: require('gulp-babel'),
 	twig: require('gulp-twig'),
+	ghPages: require('gh-pages'),
 
 	path: {
 		tasks: require('./gulp/config/tasks.js'),

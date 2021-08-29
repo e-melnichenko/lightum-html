@@ -9,6 +9,7 @@
   "author": "mbdg",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-twig": "^1.2.0"
   },

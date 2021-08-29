@@ -2,6 +2,13 @@
     margin-bottom: 70px;
     padding: 50px 0;
     background: linear-gradient(106.47deg, #FFF0FD -2.03%, rgba(255, 255, 255, 0) 107.99%), #E6F6FF;
+    @include media-xl() {
+        padding: 40px 0;
+    }
+    @include media-m() {
+        padding: 15px 0;
+        margin-bottom: 24px;
+    }
 
     &__title {
         margin: 0;
@@ -9,11 +16,22 @@
         font-size: 36px;
         font-weight: 800;
         line-height: 1.2;
+        @include media-xl() {
+            font-size: 28px;
+        }
+        @include media-m() {
+            font-size: 24px;
+        }
     }
 
     &__slider {
         position: relative;
         margin-bottom: 33px;
+        @include media-xxxl() {
+            .swiper._playing ~ .lesson-hero__slider-control {
+                display: none;
+            }
+        }
     }
 
     &__video-wrap {
@@ -21,6 +39,11 @@
         &._playing {
             .lesson-hero__play-btn {
                 display: none;
+            }
+            @include media-xl() {
+                .lesson-hero__slider-control {
+                    display: none;
+                }
             }
         }
     }
@@ -43,6 +66,14 @@
         width: 180px;
         height: 180px;
         fill: rgba(255, 255, 255, 0.7);
+        @include media-xl() {
+            width: 120px;
+            height: 120px;
+        }
+        @include media-m() {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     &__slider-control {
@@ -50,9 +81,15 @@
         position: absolute;
         top: 50%;
         width: 125px;
-        height: 125px;
+        height: 119px;
+        margin: 0;
         background-repeat: no-repeat;
         background-size: contain;
+        @include media-m() {
+            width: 50px;
+            height: 50px;
+        }
+        
         &::after {
             display: none;
         }
@@ -61,12 +98,18 @@
             background-image: url("../images/slider-prev.png");
             left: 0;
             transform: translate(-100%, -50%);
+            @include media-xxxl() {
+                transform: translate(10%, -50%);
+            }
         }
         
         &._next {
             background-image: url("../images/slider-next.png");
             right: 0;
             transform: translate(100%, -50%);
+            @include media-xxxl() {
+                transform: translate(-10%, -50%);
+            }
         }
 
         &[disabled] {

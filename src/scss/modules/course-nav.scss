@@ -106,7 +106,12 @@
             margin: -3px 0;
             padding: 3px 27px;
             border-radius: 27px;
-            transform: translateX(-27px)
+            transform: translateX(-27px);
+            @include media-xl() {
+                span {
+                    font-size: inherit;
+                }
+            }
         }
     }
 

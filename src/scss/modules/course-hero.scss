@@ -5,6 +5,12 @@
     &__inner {
         padding-top: 108px;
         padding-bottom: 124px;
+        @include media-xxxl() {
+            padding: 50px 0;
+        }
+        @include media-s() {
+            padding: 40px 0;
+        }
     }
 
     &__img-wrap {
@@ -14,11 +20,15 @@
     &__img {
         width: 100%;
         border-radius: 33px;
+        @include media-s() {
+            margin-bottom: 15px;
+        }
     }
 
     &__title {
         position: absolute;
         left: 50px;
+        max-width: calc(100% - 100px);
         bottom: 40px;
         padding: 7px 25px;
         font-size: 36px;
@@ -26,5 +36,13 @@
         line-height: 1.2;
         background: linear-gradient(106.47deg, #FFF0FD -2.03%, rgba(255, 255, 255, 0) 107.99%), #E6F6FF;
         border-radius: 26px;
+        @include media-l() {
+            font-size: 24px;
+        }
+        @include media-s() {
+            position: static;
+            max-width: none;
+            padding: 0;
+        }
     }
 }

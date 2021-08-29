@@ -94,6 +94,7 @@ $(document).ready(function () {
                 $(this.$el).find('.js-video-container').each(function() {
                     $(this).find('.js-video').get(0).pause();
                     $(this).removeClass('_playing');
+                    $(this).closest('.js-lesson-slider').removeClass('_playing')
                 })
             }
         }
@@ -178,10 +179,15 @@ $(document).ready(function () {
             const $container = $(this).closest('.js-video-container');
             $container.find('.js-video').get(0).play();
             $container.addClass('_playing')
+            $container.closest('.js-lesson-slider').addClass('_playing');
         })
 
         $('.js-video').on('ended', function() {
-            $(this).closest('.js-video-container').removeClass('_playing')
+            $(this)
+                .closest('.js-video-container')
+                .removeClass('_playing')
+                .closest('.js-lesson-slider')
+                .removeClass('_playing')
         })
 
         $('.js-video').on('click', function() {
@@ -189,7 +195,10 @@ $(document).ready(function () {
             if(!$container.hasClass('_playing')) return
 
             this.pause();
-            $container.removeClass('_playing');
+            $container
+                .removeClass('_playing')
+                .closest('.js-lesson-slider')
+                .removeClass('_playing')
         })
     }
 

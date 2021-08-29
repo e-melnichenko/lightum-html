@@ -9,6 +9,15 @@
             margin-bottom: 0;
         }
 
+        @include media-xl() {
+            padding: 30px 50px;
+        }
+
+        @include media-m() {
+            padding: 25px 20px;
+            border-radius: 15px;
+        }
+
         &._disabled {
             color: #A2A2A2;
             .chapter {
@@ -25,6 +34,9 @@
     &__top {
         display: flex;
         margin-bottom: 48px;
+        @include media-xl() {
+            display: block;
+        }
     }
 
     &__title {
@@ -34,6 +46,11 @@
         font-size: 24px;
         line-height: 1.2;
         font-weight: 800;
+        @include media-xl() {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
         span {
             display: block;
         }
@@ -53,6 +70,9 @@
         margin-top: -30px;
         margin-right: -18px;
         margin-bottom: 48px;
+        @include media-m() {
+            margin-top: -18px;
+        }
     }
 
     &__lesson {
@@ -62,6 +82,16 @@
         background: #FFFFFF;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
         border-radius: 41px;
+        @include media-xxxl() {
+            width: calc(100% / 3 - 18px);
+        }
+        @include media-xl() {
+            width: calc(100% / 2 - 18px);
+        }
+        @include media-m() {
+            width: calc(100% - 18px);
+            margin-top: 18px;
+        }
         
         &._disabled .chapter {
             &__lesson-link {
@@ -92,6 +122,9 @@
     &__bottom {
         display: flex;
         align-items: center;
+        @include media-m() {
+            display: block;
+        }
     }
 
     &__start-btn {
@@ -99,9 +132,15 @@
         margin-right: 48px;
         flex-shrink: 0;
         text-align: center;
+        @include media-m() {
+            width: 100%;
+        }
     }
 
     &__bottom-text {
         margin: 0;
+        @include media-m() {
+            margin-top: 10px;
+        }
     }
 }

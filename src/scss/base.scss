@@ -233,6 +233,25 @@ body {
         }
     }
 
+    &.color-border {
+        background-color: #fff;
+        overflow: initial;
+        &::after {
+            display: none;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 48px;
+            z-index: -1;
+            background: linear-gradient(90deg, #e3aaff 0%, #62bdff 100%);
+        }
+    }
+
     &.white {
         background: #ffffff;
 

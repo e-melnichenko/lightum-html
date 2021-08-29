@@ -1,5 +1,6 @@
 {% extends '../modules/course-base.twig' %}
 {% block page %}
+
 <section class="course-hero">
     <div class="wrapper">
         <div class="course-hero__inner">
@@ -10,41 +11,12 @@
         </div>
     </div>
 </section>
+
 <section class="course">
     <div class="wrapper">
         <div class="course__inner">
-    
-        {# decore #}
-            <div class="course__decor">
-                <div class="decor-figure">
-                    <div class="parallax-scroll" data-rellax-speed="2">
-                        <div class="parallax">
-                            <div class="parallax-move" data-depth="0.35">
-                                <img src="images/decor/decor-3.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="decor-figure">
-                    <div class="parallax-scroll" data-rellax-speed="3">
-                        <div class="parallax">
-                            <div class="parallax-move" data-depth="0.3">
-                                <img src="images/decor/decor-3.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="decor-figure">
-                    <div class="parallax-scroll" data-rellax-speed="1.2">
-                        <div class="parallax">
-                            <div class="parallax-move" data-depth="0.35">
-                                <img src="images/decor/decor-3.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        {# decore #}
+
+            {% include '../modules/course-decor.twig' %}
     
             <div class="course__content">
                 <header class="course-teacher">
@@ -127,7 +99,7 @@
                         </ul>
                     </div>
                 </header>
-    
+
                 {% set chapterList = [
                     {
                         title: 'История вязания и инструментов',
@@ -209,7 +181,7 @@
                         ]
                     },
                 ] %}
-    
+
                 <ul>
                 {% for chapter in chapterList %}
                     <li class="chapter__item {% if (chapter.disabled) %}_disabled{% endif %}">

@@ -94,6 +94,7 @@ body {
     border-radius: 14px;
     text-decoration: none;
     transition: .3s;
+    font-family: inherit;
     @include media-s {
         height: 52px;
     }
@@ -250,6 +251,10 @@ body {
             z-index: -1;
             background: linear-gradient(90deg, #e3aaff 0%, #62bdff 100%);
         }
+    }
+
+    &.rounded {
+        border-radius: 45px;
     }
 
     &.white {
@@ -490,3 +495,4 @@ button {
 @import "modules/course";
 @import "modules/lesson-hero";
 @import "modules/course-nav";
+@import "modules/task";

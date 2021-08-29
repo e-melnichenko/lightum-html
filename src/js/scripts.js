@@ -1,5 +1,7 @@
 $(document).ready(function () {
     initVideo();
+    initTaskForm();
+    initResultForm();
 
     AOS.init({
         disable: false,
@@ -188,6 +190,60 @@ $(document).ready(function () {
 
             this.pause();
             $container.removeClass('_playing');
+        })
+    }
+
+    function initTaskForm() {
+        $('body').on('change', '.js-task-input', checkAnswer);
+
+        function checkAnswer() {
+            const $form = $(this).closest('.js-task-form');
+            const data = new FormData($form[0]);
+
+            $.ajax({
+                data,
+                url: $form[0].action,
+                processData: false,
+                success(data) {
+                    const dataMock = {
+                        res: {
+                            correctInputValue: '3',
+                            answer: `Иван грозный любил цифры 1 8 5 и дату смерти выбрал лично.<br> Мы проходили это на уроке про историю смутного времени `
+                        }
+                    }
+
+                    renderAnswer(dataMock.res)
+                }
+            });
+
+            function renderAnswer({correctInputValue, answer}) {
+                $form.find('.js-task-input').each(function() {
+                    const inputClass = this.value === correctInputValue ? '_correct' : '_wrong';
+                    $(this).addClass(inputClass);
+                })
+                $form.find('.js-answer').html(`<p class="task__answer">${answer}</p>`)
+            }
+        }
+    }
+
+    function initResultForm() {
+        $('.js-result-form').on('submit', function(e) {
+            e.preventDefault();
+
+            const form = this;
+            const data = new FormData(form);
+            $.ajax({
+                data,
+                url: form.action,
+                processData: false,
+                success() {
+                    form.reset();
+                    alert('Ваш вопрос отправлен преподавателю');
+                },
+                error() {
+                    alert('Что-то пошло не так');
+                }
+            })
         })
     }
 });

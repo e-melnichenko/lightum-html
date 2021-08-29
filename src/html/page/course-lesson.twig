@@ -1,111 +1,50 @@
 {% extends '../modules/course-base.twig' %}
 {% block page %}
-    <section class="lesson-hero">
-        <div class="wrapper">
-            <h1 class="lesson-hero__title">Способы вязания. Научись вязать</h1>
-            <div class="lesson-hero__slider">
-                <div class="js-lesson-slider swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="lesson-hero__video-wrap js-video-container">
-                                <video class="lesson-hero__video js-video" src="video/knitting.mp4"></video>
-                                <button class="lesson-hero__play-btn js-play" type="button">
-                                    <svg class="lesson-hero__play-icon"><use xlink:href="images/icons.svg#play"></use></svg>
-                                </button>
-                            </div>
+
+{% include '../modules/lesson-hero.twig' %}
+
+<div class="course">
+    <div class="wrapper">
+        <div class="course__inner">
+            {% include '../modules/course-decor.twig' %}
+
+            {% include '../modules/course-nav.twig' %}
+
+            <div class="course__content">
+                <div class="course__content-wrap">
+                    <h2>Дополнительные материалы</h2>
+                    <h3>Немного подробнее о релаксе</h3>
+                    <p>Используемые узоры: соты из 20п: <br>
+                        1р:*1п снять на вспомогательную спицу за работой, 1лп, снятую петлю провязать лицевой. 1п снять на вспомогательную спицу
+                    </p>
+                    <div class="course__img-set">
+                        <div>
+                            <img src="images/course-lesson/content-1.png" alt="">
+                            <img src="images/course-lesson/content-2.png" alt="">
+                            <img src="images/course-lesson/content-3.png" alt="">
                         </div>
-                        <div class="swiper-slide">
-                            <div class="lesson-hero__video-wrap js-video-container">
-                                <video class="lesson-hero__video js-video" src="video/knitting.mp4"></video>
-                                <button class="lesson-hero__play-btn js-play" type="button">
-                                    <svg class="lesson-hero__play-icon"><use xlink:href="images/icons.svg#play"></use></svg>
-                                </button>
-                            </div>
-                        </div>
+                        <p>Используемые узоры: провязать лицевой. 1п</p>
+                    </div>
+                    <p>Используемые узоры: соты из 20п: <br>
+                        1р:*1п снять на вспомогательную спицу за работой, 1лп, снятую петлю провязать лицевой. 1п снять на вспомогательную спицу
+                    </p>
+                    <blockquote>
+                        <p>„Гораздо лучше совершать великие поступки, праздновать великие победы, даже если по пути случаются ошибки, чем вставать в ряды обычных людей, не знающих ни большой радости, ни большой беды, живущих серой жизнью, где нет ни побед, ни поражений.“</p>
+                        <cite>Теодор Рузвельт</cite>
+                    </blockquote>
+                    <img src="images/course-lesson/nuts.png" alt="">
+                    <small>Используемые узоры: провязать лицевой. 1п</small>
+                    <div class="course__info">
+                        <p>Важная информация!</p>
+                        <p>Чтобы сделать тапочки спицами, нужно определить их размер.</p>
                     </div>
                 </div>
-                <button class="lesson-hero__slider-control _prev swiper-button-prev" type="button"></button>
-                <button class="lesson-hero__slider-control _next swiper-button-next" type="button"></button>
-            </div>
-            <h2 class="lesson-hero__chapter">Глава 2. Вязание спицами по мокрому полу</h2>
-            <p class="lesson-hero__lesson">Урок 3. Скользящие перехваты</p>
-        </div>
-    </section>
-    <div class="course">
-        <div class="wrapper">
-            <div class="course__inner">
-    
-                {# decore #}
-                <div class="course__decor">
-                    <div class="decor-figure">
-                        <div class="parallax-scroll" data-rellax-speed="2">
-                            <div class="parallax">
-                                <div class="parallax-move" data-depth="0.35">
-                                    <img src="images/decor/decor-3.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="decor-figure">
-                        <div class="parallax-scroll" data-rellax-speed="3">
-                            <div class="parallax">
-                                <div class="parallax-move" data-depth="0.3">
-                                    <img src="images/decor/decor-3.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="decor-figure">
-                        <div class="parallax-scroll" data-rellax-speed="1.2">
-                            <div class="parallax">
-                                <div class="parallax-move" data-depth="0.35">
-                                    <img src="images/decor/decor-3.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {# decore #}
-    
-                <div class="course__nav course-nav">
-                    {% include '../modules/course-nav.twig' %}
-                </div>
-    
-                <div class="course__content">
-                    <div class="course__content-wrap">
-                        <h2>Дополнительные материалы</h2>
-                        <h3>Немного подробнее о релаксе</h3>
-                        <p>Используемые узоры: соты из 20п: <br>
-                            1р:*1п снять на вспомогательную спицу за работой, 1лп, снятую петлю провязать лицевой. 1п снять на вспомогательную спицу
-                        </p>
-                        <div class="course__img-set">
-                            <div>
-                                <img src="images/course-lesson/content-1.png" alt="">
-                                <img src="images/course-lesson/content-2.png" alt="">
-                                <img src="images/course-lesson/content-3.png" alt="">
-                            </div>
-                            <p>Используемые узоры: провязать лицевой. 1п</p>
-                        </div>
-                        <p>Используемые узоры: соты из 20п: <br>
-                            1р:*1п снять на вспомогательную спицу за работой, 1лп, снятую петлю провязать лицевой. 1п снять на вспомогательную спицу
-                        </p>
-                        <blockquote>
-                            <p>„Гораздо лучше совершать великие поступки, праздновать великие победы, даже если по пути случаются ошибки, чем вставать в ряды обычных людей, не знающих ни большой радости, ни большой беды, живущих серой жизнью, где нет ни побед, ни поражений.“</p>
-                            <cite>Теодор Рузвельт</cite>
-                        </blockquote>
-                        <img src="images/course-lesson/nuts.png" alt="">
-                        <small>Используемые узоры: провязать лицевой. 1п</small>
-                        <div class="course__info">
-                            <p>Важная информация!</p>
-                            <p>Чтобы сделать тапочки спицами, нужно определить их размер.</p>
-                        </div>
-                    </div>
-                    <div class="course__content-bottom">
-                        <a href="#" class="course__content-nav button color-border">Предыдущий урок</a>
-                        <a href="#" class="course__content-nav button pink-blue"><span>Следующий урок</span></a>
-                    </div>
+                <div class="course__content-bottom">
+                    <a href="#" class="course__content-nav button color-border">Предыдущий урок</a>
+                    <a href="#" class="course__content-nav button pink-blue"><span>Следующий урок</span></a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}

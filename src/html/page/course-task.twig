@@ -1,0 +1,55 @@
+{% extends '../modules/course-base.twig' %}
+{% block page %}
+
+{% include '../modules/lesson-hero.twig' %}
+
+<div class="course">
+    <div class="wrapper">
+        <div class="course__inner">
+            {% include '../modules/course-decor.twig' %}
+
+            {% include '../modules/course-nav.twig' %}
+
+            <div class="course__content">
+                <div class="task">
+                    <h2 class="task__title">Смутное время</h2>
+                    <ul class="task__step-list">
+                        <li class="task__step _passed"><span>1</span></li>
+                        <li class="task__step _current"><span>2</span></li>
+                        <li class="task__step"><span>3</span></li>
+                        <li class="task__step"><span>4</span></li>
+                        <li class="task__step"><span>5</span></li>
+                        <li class="task__step"><span>6</span></li>
+                    </ul>
+                    <img src="images/course-lesson/task-1.png" alt="" class="task__img">
+                    <form action="/index.html" class="task__form js-task-form">
+                        <p class="task__question">В каком году умер Иван Грозный?</p>
+                        <ul class="task__options-list">
+                            <li class="task__option">
+                                <label class="task__label">
+                                    <input class="js-task-input" type="radio" name="question-1" value="1">
+                                    <span>1598</span>
+                                </label>
+                            </li>
+                            <li class="task__option">
+                                <label class="task__label">
+                                    <input class="js-task-input" type="radio" name="question-1" value="2">
+                                    <span>1584</span>
+                                </label>
+                            </li>
+                            <li class="task__option">
+                                <label class="task__label">
+                                    <input class="js-task-input" type="radio" name="question-1" value="3">
+                                    <span>1581</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="js-answer"></div>
+                        <a href="#" class="task__next-btn button pink-blue rounded"><span>Следующий вопрос</span></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

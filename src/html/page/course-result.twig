@@ -1,0 +1,42 @@
+{% extends '../modules/course-base.twig' %}
+{% block page %}
+
+{% include '../modules/lesson-hero.twig' %}
+
+<div class="course">
+    <div class="wrapper">
+        <div class="course__inner">
+            {% include '../modules/course-decor.twig' %}
+
+            {% include '../modules/course-nav.twig' %}
+
+            <div class="course__content">
+                <div class="task">
+                    <h2 class="task__title">Смутное время</h2>
+                    <ul class="task__step-list">
+                        <li class="task__step _passed"><span>1</span></li>
+                        <li class="task__step _passed"><span>2</span></li>
+                        <li class="task__step _passed"><span>3</span></li>
+                        <li class="task__step _passed"><span>4</span></li>
+                        <li class="task__step _passed"><span>5</span></li>
+                        <li class="task__step _passed"><span>6</span></li>
+                    </ul>
+                    <img src="images/course-lesson/task-2.png" alt="" class="task__img">
+                    <p class="task__top-text">Вы ответили на 4 вопроса из 6</p>
+                    <p class="task__mark">Удовлетворительно</p>
+                    <p class="task__result-text">Вам следует пристальние изучить смутное время что бы не оказаца в глупой ситуации при встрече с Пугачевым</p>
+
+                    <form action="/index.html" class="js-result-form">
+                        <p class="task__form-desc">Если у вас возник вопрос, задайте его преподавателю в поле ниже:</p>
+                        <div class="task__textarea-wrap"><textarea class="task__textarea"name="" id="" rows="6"></textarea></div>
+                        <div class="task__form-bottom">
+                            <button href="#" class="task__submit-btn button green rounded" type="submit"><span>Задать вопрос</span></button>
+                            <a href="#" class="task__next-btn button pink-blue rounded"><span>Следующий вопрос</span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

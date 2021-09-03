@@ -614,6 +614,11 @@
             margin-right: -27px;
             max-width: none;
             max-height: none;
+            width: 134px;
+            height: 128px;
+            object-fit: cover;
+            clip-path: url(#hexagonMask);
+            flex-shrink: 0;
         }
     }
 
@@ -738,6 +743,7 @@
     display: block;
     text-decoration: none;
     min-width: 277px;
+    
     @include media-m {
         min-width: 222px;
         @include media-s {
@@ -753,6 +759,10 @@
         transform: translate(-25%, -50%);
         max-width: none;
         max-height: none;
+        width: 137px;
+        height: 136px;
+        object-fit: cover;
+        clip-path: url("#hexagonMask");
         z-index: 1;
         @include media-m {
             left: 50%;
@@ -951,6 +961,12 @@
                     top: -30px;
                     right: -20px;
                     z-index: 1;
+                    width: 151px;
+                    height: 151px;
+                    max-width: none;
+                    max-height: none;
+                    object-fit: cover;
+                    clip-path: url(#hexagonMask);
                     @include media-s {
                         right: -60px;
                     }
